@@ -38,7 +38,6 @@ node server.js
 - `views/`: Contains EJS templates for rendering the HTML pages.
 - `static/`: Contains static assets such as CSS files.
 - `server.js`: The main application file that configures the server and routes.
-- `logger.js`: Custom logger configuration using Winston.
 
 ## Contributing
 
