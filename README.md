@@ -8,12 +8,13 @@
 2. Install Node.js and npm if not already installed.
 3. Navigate to the project directory and run the following command to install dependencies:
 ```
-npm install express
+npm install express ejs winston
 ```
 
 ## Dependencies
 
 - Express.js: Web application framework for routing and middleware.
+- Winston: Versatile logger middleware
 
 ## Usage
 

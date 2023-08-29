@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log Viewer</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Server Logs</h1>
+    <div class="console-box">
+    <ul id="logList"></ul>
+    </div>
+  <script>
+    // Fetch logs from the server and update the page
+    async function fetchLogs() {
+      const response = await fetch('/logs');
+      const logs = await response.json();
+
+      const logList = document.getElementById('logList');
+      logs.forEach(log => {
+        const listItem = document.createElement('li');
+        listItem.textContent = log;
+        logList.appendChild(listItem);
+      });
+    }
+
+    fetchLogs();
+  </script>
+</body>
+</html>

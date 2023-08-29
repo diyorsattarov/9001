@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.console-box {
+    border: 1px solid #333;
+    background-color: #222;
+    padding: 10px;
+    margin: 20px 0;
+    height: 300px;
+    overflow-y: scroll;
+    color: #ddd;
+}
+
+.log-entry {
+    margin: 10px 0;
+    display: block;
+}
+
+.log-date {
+    color: white; /* Date color */
+    margin-right: 10px;
+}
+
+.log-level {
+    color: yellow; /* Log level color */
+    margin-right: 10px;
+}
+
+.log-message {
+    color: #ccc; /* Log message color */
+}
