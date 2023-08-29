@@ -21,12 +21,6 @@ Welcome to webapp-prac, a simple web application that provides a log viewer for 
 npm install express ejs winston passport passport-local connect-flash
 ```
 
-
-## Dependencies
-
-- Express.js: Web application framework for routing and middleware.
-- Winston: Versatile logger middleware
-
 ## Usage
 
 1. After installing dependencies, start the server by running:
