@@ -6,24 +6,42 @@
 </head>
 <body>
     <h1>Server Logs</h1>
-    <div class="console-box">
-    <ul id="logList"></ul>
+    <div class="flash-messages">
+        <!-- Display flash messages here -->
     </div>
-  <script>
-    // Fetch logs from the server and update the page
-    async function fetchLogs() {
-      const response = await fetch('/logs');
-      const logs = await response.json();
+    <div class="console-box">
+        <ul id="logList"></ul>
+    </div>
+    <script>
+        // Fetch logs from the server and update the page
+        async function fetchLogs() {
+            const response = await fetch('/logs');
+            const logs = await response.json();
 
-      const logList = document.getElementById('logList');
-      logs.forEach(log => {
-        const listItem = document.createElement('li');
-        listItem.textContent = log;
-        logList.appendChild(listItem);
-      });
-    }
+            const logList = document.getElementById('logList');
+            logs.forEach(log => {
+                const listItem = document.createElement('li');
+                listItem.textContent = log;
+                logList.appendChild(listItem);
+            });
+        }
 
-    fetchLogs();
-  </script>
+        // Fetch flash messages from the server and display them
+        async function fetchFlashMessages() {
+            const response = await fetch('/flash-messages');
+            const flashMessages = await response.json();
+
+            const flashMessagesContainer = document.querySelector('.flash-messages');
+            flashMessages.forEach(message => {
+                const flashMessage = document.createElement('div');
+                flashMessage.className = 'flash-message';
+                flashMessage.textContent = message;
+                flashMessagesContainer.appendChild(flashMessage);
+            });
+        }
+
+        fetchLogs();
+        fetchFlashMessages();
+    </script>
 </body>
 </html>
