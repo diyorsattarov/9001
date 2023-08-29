@@ -4,18 +4,21 @@ Welcome to webapp-prac, a simple web application that provides a log viewer for 
 
 ## Features
 
+- User authentication using Passport.js with local strategy and flash messages.
 - Provides a user-friendly web interface for viewing server logs.
 - Fetches and displays logs from log files: `combined.log` and `error.log`.
-- Logs are displayed in a scrollable console-like box.
+- Log viewer to display server logs dynamically.
 
-## Installation
+## Dependencies
 
-1. Clone this repository to your local machine.
-2. Install Node.js and npm if not already installed.
-3. Navigate to the project directory and run the following command to install dependencies:
+- Express.js: Web application framework for routing and middleware.
+- Winston: Versatile logger middleware
+- Passport: Authentication middleware
+- Passport-local: Local authentication strategy for Passport.js
+- Connect-flash: Middleware for displaying flash messages
 
 ```
-npm install express ejs winston
+npm install express ejs winston passport passport-local connect-flash
 ```
 
 
@@ -32,6 +35,9 @@ node server.js
 ```
 
 2. Open a web browser and navigate to `http://localhost:3000` to access the log viewer.
+- **Login**: Access the login page at `/login` to enter your credentials. Incorrect credentials will trigger flash messages. Successful login redirects to the homepage.
+- **Log Viewer**: View server logs dynamically in the log viewer.
+
 
 ## Directory Structure
 
