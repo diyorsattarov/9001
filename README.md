@@ -1,48 +1,23 @@
-# webapp-prac
+              GLWTS(Good Luck With That Shit) Общественная Лицензия
+                      Copyright (c) Все блять, кроме Автора
 
-Welcome to webapp-prac, a simple web application that provides a log viewer for server logs. This application is built using Node.js and Express.js, with logging capabilities provided by the versatile logger middleware, Winston.
+Всем разрешается копировать, распространять, изменять, совмещать, продавать,
+публиковать, сублицензировать или творить любую другую хуйню с этим кодом
+на СВОЙ СТРАХ и РИСК.
 
-## Features
-
-- User authentication using Passport.js with local strategy and flash messages.
-- Provides a user-friendly web interface for viewing server logs.
-- Fetches and displays logs from log files: `combined.log` and `error.log`.
-- Log viewer to display server logs dynamically.
-
-## Dependencies
-
-- Express.js: Web application framework for routing and middleware.
-- Winston: Versatile logger middleware
-- Passport: Authentication middleware
-- Passport-local: Local authentication strategy for Passport.js
-- Connect-flash: Middleware for displaying flash messages
-
-```
-npm install express ejs winston passport passport-local connect-flash
-```
-
-## Usage
-
-1. After installing dependencies, start the server by running:
-```
-node server.js
-```
-
-2. Open a web browser and navigate to `http://localhost:3000` to access the log viewer.
-- **Login**: Access the login page at `/login` to enter your credentials. Incorrect credentials will trigger flash messages. Successful login redirects to the homepage.
-- **Log Viewer**: View server logs dynamically in the log viewer.
+Автор абсолютно нихуя не понимает в предназначении данного кода.
+Он может сработать, а может и нет - автору не ебет.
 
 
-## Directory Structure
+                    "УДАЧИ С ЭТОМ ДЕРЬМОМ" ОБЩЕСТВЕННАЯ ЛИЦЕНЗИЯ
+          УСЛОВИЯ И ПОЛОЖЕНИЯ ДЛЯ КОПИРОВАНИЯ, РАСПРОСТРАНЕНИЯ И ИЗМЕНЕНИЯ
 
-- `views/`: Contains EJS templates for rendering the HTML pages.
-- `static/`: Contains static assets such as CSS files.
-- `server.js`: The main application file that configures the server and routes.
+  0. Делайте ЛЮБУЮ ХУЙНЮ, ВЗБРЕДУЩУЮ ВАМ В ГОЛОВУ до тех пор, пока ВЫ НЕ ОСТАВЛЯЕТЕ
+УЛИК ДЛЯ НАХОЖДЕНИЯ АВТОРА оригинального продукта, чтобы обвинить его или заставить
+взять на себя ответственность.
 
-## Contributing
+НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ АВТОРЫ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ЗА ПРЕТЕНЗИИ,
+УБЫТКИ ИЛИ ДРУГИЕ ОТВЕТСТВЕННОСТИ, ПОДНЯТЫЕ ВО ВРЕМЯ КОНТРАКТА И ВЫЗВАННЫЕ
+ПРЯМОЙ ИЛИ КОСВЕННОЙ СВЯЗЬЮ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.
 
-Contributions to this project are welcome. Feel free to open issues or submit pull requests.
-
-## License
-
-This project is licensed under the MIT License.
+Удачи, и храни тебя Господь.
